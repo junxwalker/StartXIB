@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventcell_id" rowHeight="107" id="Auz-6O-VkL" customClass="eventCell" customModule="testXIB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="107"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="Auz-6O-VkL" id="nd9-eq-fch">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9V-NN-3e0" userLabel="cellView">
+                        <rect key="frame" x="0.0" y="0.0" width="332" height="84"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Mushroom.png" translatesAutoresizingMaskIntoConstraints="NO" id="4LI-yX-be5" userLabel="cellIcon">
+                                <rect key="frame" x="8" y="8" width="72" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="FFt-3y-RFc"/>
+                                    <constraint firstAttribute="width" constant="72" id="LSq-eK-NcE"/>
+                                    <constraint firstAttribute="height" constant="65" id="sBn-hb-QbV"/>
+                                    <constraint firstAttribute="height" constant="65" id="zOc-8i-SfK"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FFt-3y-RFc"/>
+                                        <exclude reference="zOc-8i-SfK"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nka-jS-tfY" userLabel="cellTitle">
+                                <rect key="frame" x="94" y="8" width="223" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="921-OQ-0Nd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxL-Ld-gah" userLabel="cellDate">
+                                <rect key="frame" x="94" y="30" width="223" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="vLH-dC-Eln"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnh-o9-Cic" userLabel="cellContext">
+                                <rect key="frame" x="94" y="59" width="223" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4LI-yX-be5" firstAttribute="leading" secondItem="Z9V-NN-3e0" secondAttribute="leading" constant="8" id="2lI-8K-vST"/>
+                            <constraint firstItem="Nka-jS-tfY" firstAttribute="leading" secondItem="4LI-yX-be5" secondAttribute="trailing" constant="14" id="AJn-pm-RYc"/>
+                            <constraint firstItem="yxL-Ld-gah" firstAttribute="top" secondItem="Nka-jS-tfY" secondAttribute="bottom" constant="1" id="FHc-TT-E7u"/>
+                            <constraint firstAttribute="trailing" secondItem="yxL-Ld-gah" secondAttribute="trailing" constant="15" id="GWK-ht-GK0"/>
+                            <constraint firstItem="Nka-jS-tfY" firstAttribute="top" secondItem="Z9V-NN-3e0" secondAttribute="top" constant="8" id="GkP-dz-OMS"/>
+                            <constraint firstAttribute="trailing" secondItem="Nka-jS-tfY" secondAttribute="trailing" constant="15" id="XQ6-nE-VIP"/>
+                            <constraint firstItem="yxL-Ld-gah" firstAttribute="leading" secondItem="4LI-yX-be5" secondAttribute="trailing" constant="14" id="YIP-rp-4bf"/>
+                            <constraint firstItem="Hnh-o9-Cic" firstAttribute="leading" secondItem="4LI-yX-be5" secondAttribute="trailing" constant="14" id="ZKw-pi-YQd"/>
+                            <constraint firstItem="4LI-yX-be5" firstAttribute="top" secondItem="Z9V-NN-3e0" secondAttribute="top" constant="8" id="hEG-g2-Ft9"/>
+                            <constraint firstItem="Hnh-o9-Cic" firstAttribute="top" secondItem="yxL-Ld-gah" secondAttribute="bottom" constant="8" id="htm-W5-aLc"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4LI-yX-be5" secondAttribute="bottom" constant="34" id="qu2-Jp-X31"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Hnh-o9-Cic" secondAttribute="bottom" constant="8" id="tl9-8L-PLK"/>
+                            <constraint firstAttribute="trailing" secondItem="Hnh-o9-Cic" secondAttribute="trailing" constant="15" id="ugI-I6-KdB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Z9V-NN-3e0" secondAttribute="trailing" id="Byz-f1-PMh"/>
+                    <constraint firstItem="Z9V-NN-3e0" firstAttribute="top" secondItem="nd9-eq-fch" secondAttribute="top" id="RQe-wS-iab"/>
+                    <constraint firstItem="Z9V-NN-3e0" firstAttribute="leading" secondItem="nd9-eq-fch" secondAttribute="leading" id="fBt-Qo-TTH"/>
+                    <constraint firstAttribute="bottom" secondItem="Z9V-NN-3e0" secondAttribute="bottom" id="qF4-qN-K9h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellContext" destination="Hnh-o9-Cic" id="wrj-l9-Thq"/>
+                <outlet property="cellDate" destination="yxL-Ld-gah" id="lEu-uV-fK7"/>
+                <outlet property="cellIcon" destination="4LI-yX-be5" id="cwK-64-1vg"/>
+                <outlet property="cellTital" destination="Nka-jS-tfY" id="qYj-Hf-52i"/>
+                <outlet property="cellView" destination="Z9V-NN-3e0" id="i4E-M4-A8E"/>
+            </connections>
+            <point key="canvasLocation" x="325" y="167.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Mushroom.png" width="256" height="256"/>
+    </resources>
+</document>

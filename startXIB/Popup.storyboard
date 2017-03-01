@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5VB-fs-VO6">
+            <objects>
+                <viewController storyboardIdentifier="testPopup" id="YwK-jc-O6Z" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FUp-pU-YK7"/>
+                        <viewControllerLayoutGuide type="bottom" id="PC6-1V-DTD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I7z-b6-Cpg">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3RZ-m2-ZYP">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etU-GO-uai">
+                                        <rect key="frame" x="8" y="40" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cv-0x-VvP">
+                                        <rect key="frame" x="146" y="35" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0cv-0x-VvP" firstAttribute="leading" secondItem="etU-GO-uai" secondAttribute="trailing" constant="96" id="1Fa-gb-2da"/>
+                                    <constraint firstItem="0cv-0x-VvP" firstAttribute="top" secondItem="3RZ-m2-ZYP" secondAttribute="top" constant="35" id="Dk7-mT-5ql"/>
+                                    <constraint firstItem="etU-GO-uai" firstAttribute="top" secondItem="3RZ-m2-ZYP" secondAttribute="top" constant="40" id="Ldo-Jn-Igr"/>
+                                    <constraint firstAttribute="width" constant="200" id="bB7-qQ-LkU"/>
+                                    <constraint firstAttribute="bottom" secondItem="0cv-0x-VvP" secondAttribute="bottom" constant="35" id="fBw-rm-u3m"/>
+                                    <constraint firstAttribute="bottom" secondItem="etU-GO-uai" secondAttribute="bottom" constant="39" id="iIw-1M-Oxz"/>
+                                    <constraint firstAttribute="height" constant="100" id="pTc-LI-g7P"/>
+                                    <constraint firstAttribute="trailing" secondItem="0cv-0x-VvP" secondAttribute="trailing" constant="8" id="xvO-XJ-nlF"/>
+                                    <constraint firstItem="etU-GO-uai" firstAttribute="leading" secondItem="3RZ-m2-ZYP" secondAttribute="leading" constant="8" id="zvx-Xc-Nyp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="PC6-1V-DTD" firstAttribute="top" secondItem="3RZ-m2-ZYP" secondAttribute="bottom" id="003-pj-Ihr"/>
+                            <constraint firstItem="3RZ-m2-ZYP" firstAttribute="top" secondItem="I7z-b6-Cpg" secondAttribute="top" id="1bT-1m-c4B"/>
+                            <constraint firstAttribute="trailing" secondItem="3RZ-m2-ZYP" secondAttribute="trailing" id="3dV-4l-u9o"/>
+                            <constraint firstItem="3RZ-m2-ZYP" firstAttribute="leading" secondItem="I7z-b6-Cpg" secondAttribute="leading" id="ycJ-we-1dE"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="100"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t56-W7-pSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="142.1289355322339"/>
+        </scene>
+    </scenes>
+</document>
